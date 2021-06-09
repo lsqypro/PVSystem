@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2301855_xoiznkrwac.css">
+    <link rel="stylesheet" href="../css/vist/base.css">
+    <link rel="stylesheet" href="../css/vist/my.css">
+    <link rel="stylesheet" href="../css/component/dialog.css">
+    <script src="../js/lib/set_root.js"></script>
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/axios.min.js"></script>
+    <script src="../js/lib/jquery.form.min.js"></script>
+    <script src="../js/vist/my.js" type="module"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-container">
+            <a class="back-container dn" href="#" onClick="javascript :history.back(-1);">
+                <i class="iconfont icon-fanhui"></i>
+            </a>
+            <div class="title-container">
+                <div class="title">我的</div>
+            </div>
+        </header>
+
+        <article class="article-container">
+            <div class="head-photo-container">
+                <img src="../img/head.jpg" alt="头像" id="avatar">
+            </div>
+            <div class="user-info-container">
+                <span id="user-name">姓名</span>
+                <span id="uid">UID:123456</span>
+            </div>
+            <div class="info-list-container">
+                <ul>
+                    <li>
+                        <div class="key">实名信息</div>
+                        <div class="opt" ><span class="value" id="real-status">未实名</span><i class="iconfont icon-qianjin"></i></div>
+                    </li>
+                    <li>
+                        <div class="key">手机</div>
+                        <div class="opt"><span class="value" id="mobie">123****1234</span><i class="iconfont icon-qianjin"></i></div>
+                    </li>
+                    <li>
+                        <div class="key">关于</div>
+                        <div class="opt"><span class="value" id="btn-version">1.0</span><i class="iconfont icon-qianjin"></i></div>
+                    </li>
+                    
+                </ul>
+               
+                <div class="mbtn" id="quit">退出登录</div>
+            </div>
+
+        </article>
+        
+        <footer class="footer-container">
+            <ul class="tabbar">
+                <li>
+                    <a href="./index.html">
+                        <i class="iconfont icon-zhuye"></i>
+                        <span>主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./message.html">
+                        <i class="iconfont icon-xiaoxi"></i>
+                        <span>消息</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./my.html" class="select">
+                        <i class="iconfont icon-wode"></i>
+                        <span>我的</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+
+        <div class="upload-avatar-container dn">
+            <form id="form-avatar">
+                选择头像：<input type="file" accept="image/*" name="image">
+                <input type="submit" class="mbtn upload-btn" value="上传">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

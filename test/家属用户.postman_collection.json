@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "941ceee2-529c-443d-8bc9-afb31728abe3",
+		"name": "家属用户",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "家属用户注册",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"17396240189\",\r\n    \"password\": \"123456\",\r\n    \"sms_code\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/relation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"relation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "家属用户登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"17396240189\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/relation_session",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"relation_session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "家属用户修改密码",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"17396240189\",\r\n    \"old_password\": \"123456\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/relation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"relation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "家属用户提交探监申请",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prisoner_id\": \"10\",\r\n    \"prisoner_mobile\": \" \",\r\n    \"start_time\": \"2021-01-01 14:00\",\r\n    \"end_time\": \"2021-01-01 14:30\",\r\n    \"apply_desc\": \"请通过！\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/relation_vist_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"relation_vist_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "家属用户提交实名认证",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"real_name\": \"张三\",\r\n    \"id_card\": \"123456789012345678\",\r\n    \"sms_code\": \"123456\",\r\n    \"id_card_url_front\": \"u1\",\r\n    \"id_card_url_back\": \"u2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/relation_author_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"relation_author_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "家属用户获取探监记录",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

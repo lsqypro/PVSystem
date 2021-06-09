@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消息</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2301855_xoiznkrwac.css">
+    <link rel="stylesheet" href="../css/vist/base.css">
+    <link rel="stylesheet" href="../css/vist/mediachat.css">
+    <link rel="stylesheet" href="../css/component/dialog.css">
+    <script src="../js/lib/set_root.js"></script>
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/axios.min.js"></script>
+    <script src="../js/lib/adapter-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="../js/vist/mediachat.js" type="module"></script>
+</head>
+<body>
+    <div class="main-container">
+        <i id="back-btn" class="iconfont icon-fanhui"></i>
+        <video id="video-main" autoplay playsinline></video>
+        
+        <!-- 本地视频源 -->
+        <div class="video-container locol video-select">
+            <div class="title-container ">
+                <!-- <i class="iconfont icon-zhanghao"></i> -->
+                <!-- <div class="title">本地摄像头</div> -->
+                <!-- <div class="call"><i class="iconfont icon-bohao"></i></div> -->
+                <div class="audio"><i class="iconfont icon-maikefeng select"></i></div>
+                <div class="video"><i class="iconfont icon-videocameraadd"></i></div>
+            </div>
+            <video class="video-min" id="video-local" autoplay playsinline></video>
+        </div>
+
+        <!-- 远程视频源 -->
+        <div class="video-container remote">
+            <div class="title-container">
+                <!-- <i class="iconfont icon-zhanghao"></i> -->
+                <!-- <div class="title">本地摄像头</div> -->
+                <!-- <div class="call"><i class="iconfont icon-bohao"></i></div> -->
+                <div class="audio"><i class="iconfont icon-maikefeng select"></i></div>
+                <div class="video"><i class="iconfont icon-videocameraadd"></i></div>
+            </div>
+            <video class="video-min" id="video-remote" autoplay playsinline></video>
+        </div>
+
+        <!-- debug窗口 -->
+        <div class="debug-container dn">
+            <div class="sdp-container">
+                <div>Local SDP</div>
+                <textarea name="" id="local-sdp" cols="300" rows="10"></textarea>
+                <div>Remote SDP</div>
+                <textarea name="" id="remote-sdp" cols="300" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

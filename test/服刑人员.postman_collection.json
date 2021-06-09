@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "6a2bb509-095d-489a-8c39-6c6d193aa959",
+		"name": "服刑人员",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "服刑人员获取探监记录",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/prisoner_vist_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"prisoner_vist_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "服刑人员登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"id9527\",\r\n    \"password\": \"id9527\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/prisoner_session",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"prisoner_session"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

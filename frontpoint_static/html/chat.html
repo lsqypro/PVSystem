@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Chat</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2301855_xoiznkrwac.css">
+    <link rel="stylesheet" href="../css/vist/base.css">
+    <link rel="stylesheet" href="../css/vist/chat.css">
+    <link rel="stylesheet" href="../css/component/dialog.css">
+    <script src="../js/lib/set_root.js"></script>
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/axios.min.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="../js/vist/chat.js" type="module"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-container">
+            <a class="back-container" href="#" onClick="javascript :history.back(-1);" style="z-index: 99999">
+                <i class="iconfont icon-fanhui"></i>
+            </a>
+            <div class="title-container">
+                <div class="title">详细信息</div>
+            </div>
+        </header>
+        <video src="" id="video_main"  autoplay playsinline></video>
+        <video src="" id="video_local"  autoplay playsinline></video>
+        <video src="" id="video_remote"  autoplay playsinline></video>
+        
+        <div id="btn_microphone" class="img_box iconfont icon-maikefeng"></div> 
+        <div id="btn_phone" class="img_box iconfont icon-bohao"></div>
+        <div id="btn_device" class="img_box iconfont icon-qiehuanshexiangtou"></div>
+        
+        <select name="" id="vsrc" class="dn">
+            <option value="user">user</option>
+            <option value="desktop">desktop</option>
+            <option value="env">env</option>
+        </select>
+    </div>
+</body>
+</html>

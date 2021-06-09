@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>申请</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2301855_xoiznkrwac.css">
+    <link rel="stylesheet" href="../css/vist/base.css">
+    <link rel="stylesheet" href="../css/vist/applyfor.css">
+    <link rel="stylesheet" href="../css/component/dialog.css">
+    <script src="../js/lib/set_root.js"></script>
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/axios.min.js"></script>
+    <script src="../js/vist/applyfor.js" type="module"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-container">
+            <a class="back-container" href="#" onClick="javascript :history.back(-1);">
+                <i class="iconfont icon-fanhui"></i>
+            </a>
+            <div class="title-container">
+                <div class="title">探监申请</div>
+            </div>
+        </header>
+
+        <article class="article-container">
+            <form class="form-container">
+                <div class="form-item">
+                    <div class="title">身份信息</div>
+                    <div class="content">
+                        <div class="key">ID</div>
+                        <input type="text" class="value" name="" id="bid" placeholder="服刑人身份证号">
+                    </div>
+                </div>
+                
+                <div class="form-item">
+                    <div class="title">时间段</div>
+                    <div class="content time">
+                        <div class="key">开始时间</div>
+                        <div class="value" id="time-btn-begin"><input type="datetime-local" name="" id="start-time-input"/><i class="iconfont icon-qianjin"></i></div>
+                        <!-- <div class="value" id="time-btn-begin"><span>选择时间</span><i class="iconfont icon-qianjin"></i></div> -->
+                    </div>
+                    <div class="content time">
+                        <div class="key">结束时间</div>
+                        <div class="value" id="time-btn-begin"><input type="datetime-local" name="" id="end-time-input"/><i class="iconfont icon-qianjin"></i></div>
+                        <!-- <div class="value" id="time-btn-end"><span>选择时间</span><i class="iconfont icon-qianjin"></i></div> -->
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <div class="title">申请理由</div>
+                    <div class="content">
+                        <div class="key">说明</div>
+                        <textarea class="value" name="" id="desc" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </form>
+            <!-- <div class="protocol-container"><div class="radio radio-select">√</div><div class="desc">已阅读并同意《<a href="#">用户协议</a>》</div></div> -->
+
+            
+            <div class="mbtn">提交申请</div>
+        </article>
+
+        <div class="datetime-container dn">
+            <div class="datatime-cancel"></div>
+            <div class="datetime-select">
+                <div class="datetime-header">
+                    <div class="btn" id="time-btn-cancel">取消</div>
+                    <div class="title">选择时间</div>
+                    <div class="btn" id="time-btn-ok">确定</div>
+                </div>
+                <div class="datetime-body">
+                    <div class="year line">
+                        <div class="items">
+                            <div class="item ">2021年</div>
+                            <div class="item ">2021年</div>
+                            <div class="item ">2020年</div>
+                            <div class="item ">2020年</div>
+                            <div class="item ">2020年</div>
+                            <div class="item select">2020年</div>
+                            <div class="item ">2020年</div>
+                            <div class="item ">2021年</div>
+                            <div class="item ">2021年</div>
+                            <div class="item ">2021年</div>
+                            <div class="item ">2022年</div>
+                        </div>
+                    </div>
+                    <div class="month line">
+                        <div class="items">
+                            <div class="item ">01月</div>
+                            <div class="item select">02月</div>
+                            <div class="item ">03月</div>
+                        </div>
+                    </div>
+                    <div class="date line">
+                        <div class="item ">01日</div>
+                            <div class="item select">02日</div>
+                            <div class="item ">03日</div>
+                    </div>
+                    <div class="hour line">
+                        <div class="items">
+                            <div class="items">
+                                <div class="item ">21时</div>
+                                <div class="item select">22时</div>
+                                <div class="item ">23时</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="minute line">
+                        <div class="items">
+                            <div class="item ">01分</div>
+                            <div class="item select">02分</div>
+                            <div class="item ">03分</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-container dn">
+            <ul class="tabbar">
+                <li>
+                    <a href="./index.html" class="select">
+                        <i class="iconfont icon-zhuye"></i>
+                        <span>主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./message.html">
+                        <i class="iconfont icon-xiaoxi"></i>
+                        <span>消息</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./my.html">
+                        <i class="iconfont icon-wode"></i>
+                        <span>我的</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

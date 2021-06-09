@@ -1,0 +1,48 @@
+.mbtn {
+    margin-top: 20px;
+}
+.message-list-container {
+    width: 8.375rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #666;
+}
+.message-list-container .title {
+    font-size: .3rem;
+}
+.message-list-container ul {
+    margin-top: .25rem;
+}
+.message-list-container li {
+    font-size: .325rem;
+    padding: 10px;
+    border: .025rem solid #E4E4E4;
+    margin-top: -1px;
+    list-style: none;
+    /* height: 2rem; */
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+}
+.message-list-container .title-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.message-list-container li .name {
+    color: #000;
+}
+
+#room-input {
+    display: block;
+    width: 8.375rem;
+    height: 1.125rem;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: .4rem;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.125rem;
+    border-radius: .075rem;
+    margin-top: 20px;
+}

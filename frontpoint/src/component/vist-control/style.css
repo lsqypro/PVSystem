@@ -1,0 +1,11 @@
+/* VideoControl */
+.message-container {
+    width: 800px;
+    height: 800px;
+    background-color: paleturquoise;
+}
+
+.message-history {
+    width: 100%;
+    height: 200px;
+}

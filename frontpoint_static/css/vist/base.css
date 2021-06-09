@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    /* background-color: red; */
+    font-size: .4rem;
+}
+img {
+    width: 100%;
+}
+
+.clearfix::after, .clearfix::before {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/* -- 公共样式 -- */
+.main-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.header-container {
+    height: 1.125rem;
+    background-color: #1abc9c;
+    position: relative;
+}
+.header-container .back-container {
+    height: 100%;
+    width: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+.dn {
+    display: none!important;
+}
+.header-container .back-container i {
+    font-size: .4rem;
+    color: #fff;
+    height: 100%;
+    line-height: 1.125rem;
+}
+.header-container .title-container {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.header-container .title-container .title {
+    color: #fff;
+    height: 100%;
+    font-size: .4rem;
+    line-height: 1.125rem;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    height: 1.5rem;
+    width: 100%;
+    border-top: .025rem solid #E4E4E4;
+    background-color: #fff;
+}
+.footer-container .tabbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.footer-container .tabbar li {
+    flex: 1;
+    list-style: none;
+    height: 100%;
+}
+.icon-zhuye,
+.icon-xiaoxi,
+.icon-wode {
+    font-size: 0.4rem!important;
+}
+.footer-container .tabbar li a {
+    display: flex;
+    color: #666;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: .4rem;
+    cursor: pointer;
+}
+.select {
+    color: #1abc9c!important;
+}
+
+.article-container {
+    position: absolute;
+    top: 1.125rem;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    /* background-color: green; */
+    overflow-y: auto;
+}
+
+/* 按钮 */
+.mbtn {
+    width: 8.375rem;
+    height: 1.125rem;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: .4rem;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.125rem;
+    border-radius: .075rem;
+}
+
+/* 协议 */
+.protocol-container {
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .4rem;
+}
+.protocol-container .radio {
+    border-radius: .5rem;
+    width: .5rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    margin-right: .125rem;
+    cursor: pointer;
+    border: .025rem solid #666;
+    color: #fff;
+}
+.protocol-container .radio-select {
+    border: 0;
+    color: #fff;
+    background-color: #1abc9c;
+}
+.protocol-container a {
+    color: #1abc9c;
+}
+
+/* 时间选择器 */
+.datetime-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.datetime-select {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.625rem;
+    background-color: #fff;
+}
+.datetime-container .datetime-header {
+    height: 1.125rem;
+    font-size: .325rem;
+    display: flex;
+    border-bottom: .025rem solid #E4E4E4;
+}   
+.datetime-container .datetime-body {
+    /* background-color: red; */
+    width: 100%;
+    position: absolute;
+    top: 1.125rem;
+    bottom: 0;
+    display: flex;
+}
+.datetime-container .datetime-header div {
+    line-height: 1.125rem;
+    width: 4.375rem;
+    text-align: center;
+}
+.datetime-container .datetime-header .btn {
+    color: #1abc9c;
+    width: 2.5rem;
+}
+.datetime-container .datetime-body .line {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: .1875rem;
+    overflow: hidden;
+    position: relative;
+}
+.datetime-container .datetime-body .item {
+    height: .875rem;
+    line-height: .875rem;
+    color: #666;
+}
+.datetime-container .datetime-body .select {
+    border-top: .025rem solid #E4E4E4;
+    border-bottom: .025rem solid #E4E4E4;
+    color: #000!important;
+}
+.datetime-container .datetime-body .year .items {
+    position: absolute;
+    width: 1.875rem;
+    /* step: 35px=.875rem */
+    /* top: calc(3*.875rem);   */
+}

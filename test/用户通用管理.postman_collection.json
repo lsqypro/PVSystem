@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "07642b72-9b57-45bb-8997-cc95ad79bc67",
+		"name": "用户通用管理",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "检查登录状态",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/session",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更改头像",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/profile_avator?image_url=hhhh",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"profile_avator"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "hhhh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "退出登录",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/session",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"session"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

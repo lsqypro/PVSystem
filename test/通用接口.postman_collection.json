@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "b67cb877-6652-4c24-b2d1-f78b37d84324",
+		"name": "通用接口",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取图片验证码",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/image_codes/xxxx",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"image_codes",
+						"xxxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取CSRF_TOKEN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/csrf_token",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"csrf_token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取短信验证码",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/sms_codes/17396240186?image_code=9BE4&image_code_id=xxxx",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"sms_codes",
+						"17396240186"
+					],
+					"query": [
+						{
+							"key": "image_code",
+							"value": "9BE4"
+						},
+						{
+							"key": "image_code_id",
+							"value": "xxxx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "图片上传",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

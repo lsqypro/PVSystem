@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2301855_xoiznkrwac.css">
+    <link rel="stylesheet" href="../css/vist/base.css">
+    <link rel="stylesheet" href="../css/vist/register.css">
+    <link rel="stylesheet" href="../css/component/dialog.css">
+    <script src="../js/lib/set_root.js"></script>
+    <script src="../js/lib/jquery-1.12.4.min.js"></script>
+    <script src="../js/lib/axios.min.js"></script>
+    <script src="../js/vist/register.js" type="module"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="https://www.cuit.edu.cn/Images/logo.png" alt="" srcset="">
+            <span>成都信息工程大学·毕业设计</span>
+            <i class="iconfont icon-logo"></i>
+            <span>视频探监系统</span>
+        </div>
+        <div class="input-container">
+            <div class="phone-container">
+                <i class="phone-icon iconfont icon-shouji"></i>
+                <input type="tel" name="user" id="phone-input" placeholder="手机号码">
+                <div class="opt"></div>
+            </div>
+            <div class="code-container">
+                <i class="code-icon iconfont icon-tupianyanzhengma1"></i>
+                <input type="text" name="user" id="img-code-input" placeholder="图片验证码">
+                <div class="opt"><img src="" alt="图片验证码" id="change-img-code"></div>
+            </div>
+            <div class="code-container">
+                <i class="code-icon iconfont icon-tupianyanzhengma"></i>
+                <input type="text" name="user" id="code-input" placeholder="短信验证码">
+                <div class="opt"><div href="#" id="sendcode">发送验证码</div></div>
+            </div>
+            <div class="pwd-container">
+                <i class="pwd-icon iconfont icon-mima"></i>
+                <input type="password" name="user" id="pwd-input" placeholder="密码">
+                <div class="opt"></div>   
+            </div>
+            <div class="pwd-container">
+                <i class="pwd-icon iconfont icon-mima"></i>
+                <input type="password" name="user" id="pwd-input-2" placeholder="确认密码">
+                <div class="opt"></div>   
+            </div>
+        </div>
+        <div class="protocol-container"><div class="radio radio-select">√</div><div class="desc">已阅读并同意《<a href="#">用户协议</a>》</div></div>
+        <div class="button-container">
+            <div class="mbtn">注册</div>
+        </div>
+        <div class="link-container"><a href="login.html">返回登录页</a></div>
+
+    </div>
+</body>
+</html>

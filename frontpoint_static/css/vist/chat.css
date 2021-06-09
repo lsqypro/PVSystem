@@ -1,0 +1,64 @@
+#video_main {
+    width: 375px;
+    height: 667px;
+    border: 1px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: gray;
+}
+
+#video_local, #video_remote {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #1ABC9C;
+    position: absolute;
+    left: 22px;
+    top: 443px;
+    z-index: 2;
+}
+
+#video_remote {
+    left: 142px;
+    border: 1px solid black;
+}
+
+#btn_microphone, #btn_phone, #btn_device {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 572px;
+    z-index: 2;
+}
+
+#btn_microphone {
+    left: 22px;
+}
+
+#btn_phone {
+    left: 165px;
+}
+
+#btn_device {
+    left: 307px;
+}
+
+.img_box{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+.selected {
+    color: #1ABC9C;
+}
+
+#vsrc {
+    position: fixed;
+    z-index: 99999;
+}

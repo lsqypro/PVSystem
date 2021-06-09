@@ -1,0 +1,108 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo-container {
+    color: #1abc9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container i {
+    font-size: 3rem;
+
+}
+.logo-container span {
+    color: #666;
+    font-weight: bold;
+    font-size: .55rem;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phone-container,
+.pwd-container,
+.code-container {
+    width: 7rem;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #E4E4E4;
+}
+.input-container i {
+    height: 1.25rem;
+    width: 1.25rem;
+    text-align: center;
+    line-height: 1.25rem;
+}
+.input-container input {
+    width: 3.75rem;
+    height: 1.25rem;
+    font-size: .325rem;
+    outline: none;
+}
+.input-container .opt {
+    width: 2rem;
+    height: 1.25rem;
+    font-size: .3rem;
+    text-align: center;
+    line-height: 1.25rem;
+}
+.input-container .opt a {
+    color: #666;
+}
+
+.link-container {
+    display: flex;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.link-container a {
+    font-size: .4rem;
+    color: #1abc9c;
+}
+.link-container .link-right {
+    position: absolute;
+    right: 1.125rem; 
+}
+
+.mbtn {
+    width: 7rem;
+    border-radius: .5625rem;
+}
+
+.protocol-container {
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .4rem;
+}
+.protocol-container .radio {
+    border-radius: .5rem;
+    width: .5rem;
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    margin-right: .125rem;
+    cursor: pointer;
+    border: .025rem solid #666;
+    color: #fff;
+}
+.protocol-container .radio-select {
+    border: 0;
+    color: #fff;
+    background-color: #1abc9c;
+}
+.protocol-container a {
+    color: #1abc9c;
+}

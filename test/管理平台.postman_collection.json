@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "554687da-3c23-47ef-93bf-ef4959830c7c",
+		"name": "管理平台",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "注册系统管理员",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/system",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"system"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/admin_session",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"admin_session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员密码修改",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"jailer1\",\r\n    \"old_password\": \"jailer\",\r\n    \"password\": \"jailer1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/admin",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "系统管理员注册任意账户",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"id9527\",\r\n    \"password\": \"id9527\",\r\n    \"user_type\": \"服刑人员\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/user",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "系统管理员获取用户数据",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/user",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "系统管理员修改用户数据",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"user_dict\": {\r\n        \"real_status\": \"未实名\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/user",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员修改探监申请信息",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"vist_record_dict\": {\r\n        \"status\": \"未通过\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/vist_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"vist_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员获取探监申请信息",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/vist_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"vist_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员更改实名认证记录",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"author_record_dict\": {\r\n        \"status\": \"已通过\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/author_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"author_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "管理员获取实名认证记录",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.qingyun.work/vist/api/v1.0/author_record",
+					"protocol": "https",
+					"host": [
+						"www",
+						"qingyun",
+						"work"
+					],
+					"path": [
+						"vist",
+						"api",
+						"v1.0",
+						"author_record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "生成USIG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
